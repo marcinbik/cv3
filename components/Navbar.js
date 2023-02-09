@@ -13,8 +13,8 @@ function MobileNav({open, setOpen}) {
     
     
     return(
-        <div className={`absolute  top-0 left-0 h-screen w-screen  bg-white  transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-tranform duration-200 	 else-in-out  filter drop-shadow-md`}>
-            <div className={`flex items-center justify-center filter drop-shadow-md shadow-primary-100  bg-white h-30`}>
+        <div className={`absolute  top-0 left-0 h-screen w-screen  md:hidden  font-bold bg-gradient-to-r from-primary-300 to-white  transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-tranform duration-200 	 else-in-out  filter drop-shadow-md`}>
+            <div className={`flex items-center justify-center filter drop-shadow-md shadow-primary-100   h-30`}>
                 <Link className={`text-2xl h-[15vh]    font-bold lg:hidden `} href="/">
                 <Image src='/logo.png' width={150} height={150} alt='logo' />
                 </Link>
@@ -37,7 +37,7 @@ export default function Navbar(){
    
     
     return (
-        <nav className="flex filter z-50 shadow-lg shadow-primary/5 text-primary  font-bold bg-white  px-5 p-10 h-30  items-center">
+        <nav className="flex filter z-50 shadow-lg shadow-primary/5 text-primary  font-bold bg-gradient-to-r from-primary-300 to-white   px-5 p-10 h-30  items-center">
             <MobileNav open={open} setOpen={setOpen}/>
            
             <div className=" flex sticky w-8 min-h-900  flex-col justyfy-between  items-center md:hidden" onClick={() => {setOpen(!open)} }>
