@@ -17,7 +17,7 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen }) {
   return (
     <div
-      className={`absolute z-10 top-0 left-0 h-screen w-screen  md:hidden  font-bold bg-gradient-to-r from-primary-900 to-black  transform ${
+      className={`absolute z-10 top-0 left-0 h-screen w-screen  md:hidden  font-bold bg-gradient-to-r from-primary-900 to-accent-300  transform ${
         open ? '-translate-x-0' : '-translate-x-full'
       } transition-tranform duration-200 else-in-out filter drop-shadow-md`}
     >
@@ -73,7 +73,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="flex filter   shadow-lg shadow-primary/5 text-primary-100  font-bold bg-gradient-to-r from-primary-900 to-black   px-5 p-10 h-30  items-center">
+    <nav className="flex filter   shadow-lg shadow-primary/5 text-primary-100   font-bold bg-gradient-to-r from-primary-900 to-accent-300   px-5 p-10 h-30  items-center">
       <MobileNav open={open} setOpen={setOpen} />
 
       <div
