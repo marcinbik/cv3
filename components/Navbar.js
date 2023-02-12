@@ -7,7 +7,7 @@ function NavLink({ to, children }) {
     <Link
       href={to}
       passHref
-      className="font-bold uppercase tracking-wide text-primary py-2 px-8 hover:text-primary-900 hover:bg-primary-100 rounded-lg transition-colors"
+      className="font-bold uppercase tracking-wide text-primary-100 py-2 px-8 hover:text-primary-900 hover:bg-primary-100 rounded-lg transition-colors"
     >
       {children}
     </Link>
@@ -17,7 +17,7 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen }) {
   return (
     <div
-      className={`absolute z-10 top-0 left-0 h-screen w-screen  md:hidden  font-bold bg-gradient-to-r from-primary-100 to-white  transform ${
+      className={`absolute z-10 top-0 left-0 h-screen w-screen  md:hidden  font-bold bg-gradient-to-r from-primary-900 to-black  transform ${
         open ? '-translate-x-0' : '-translate-x-full'
       } transition-tranform duration-200 else-in-out filter drop-shadow-md`}
     >
@@ -32,7 +32,7 @@ function MobileNav({ open, setOpen }) {
       </div>
       <div className={'flex flex-col text-2xl py-20 mx-20 uppercase lg:hidden'}>
         <Link
-          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-100 rounded-md  my-4"
+          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-900 rounded-md  my-4"
           href="/services"
           onClick={() => {
             setTimeout(() => {
@@ -43,7 +43,7 @@ function MobileNav({ open, setOpen }) {
           Moje usługi
         </Link>
         <Link
-          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-100 rounded-md  my-4"
+          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-900 rounded-md  my-4"
           href="/about"
           onClick={() => {
             setTimeout(() => {
@@ -54,7 +54,7 @@ function MobileNav({ open, setOpen }) {
           O Mnie
         </Link>
         <Link
-          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-100 rounded-md  my-4"
+          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-900 rounded-md  my-4"
           href="/contact"
           onClick={() => {
             setTimeout(() => {
@@ -73,7 +73,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="flex filter   shadow-lg shadow-primary/5 text-primary  font-bold bg-gradient-to-r from-primary-100 to-white   px-5 p-10 h-30  items-center">
+    <nav className="flex filter   shadow-lg shadow-primary/5 text-primary-100  font-bold bg-gradient-to-r from-primary-900 to-black   px-5 p-10 h-30  items-center">
       <MobileNav open={open} setOpen={setOpen} />
 
       <div
@@ -83,22 +83,22 @@ export default function Navbar() {
         }}
       >
         <span
-          className={`h-1 w-full mt-1 bg-primary-900 rounded-lg  transform transition duraton-300 ease-in-out ${
+          className={`h-1 w-full mt-1 bg-primary-200 rounded-lg  transform transition duraton-300 ease-in-out ${
             open ? 'rotate-45 -translate-y-3.5' : ''
           }`}
         />
         <span
-          className={` h-1 w-full mt-1 bg-primary-900 rounded-lg  transform transition duraton-300 ease-in-out ${
+          className={` h-1 w-full mt-1 bg-primary-200 rounded-lg  transform transition duraton-300 ease-in-out ${
             open ? 'rotate-45 -translate-y-3.5' : ''
           }`}
         />
         <span
-          className={`h-1 w-full mt-1 bg-primary-900 rounded-lg transform transition duraton-300 ease-in-out ${
+          className={`h-1 w-full mt-1 bg-primary-200 rounded-lg transform transition duraton-300 ease-in-out ${
             open ? 'rotate-45 -translate-y-3.5' : ''
           }`}
         />
         <span
-          className={`h-1 w-full mt-1 bg-primary-900 rounded-lg transform transition duraton-300 ease-in-out ${
+          className={`h-1 w-full mt-1 bg-primary-200 rounded-lg transform transition duraton-300 ease-in-out ${
             open ? 'rotate-45 -translate-y-3.5' : ''
           }`}
         />
