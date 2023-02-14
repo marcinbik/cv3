@@ -33,7 +33,7 @@ export default function Home() {
         </div>
       </div>
       <div className="h-30  m-20"></div>
-      <div className="grid grid-cols-12 lg:gap-12  text-black">
+      <div className="grid ml-10 grid-cols-12 lg:gap-12  text-black">
         <CardProduct
           img={'/wordpress.jpg'}
           title={'Strona WordPress'}
