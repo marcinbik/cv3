@@ -25,15 +25,15 @@ export default function Home() {
     <>
       <Head />
       <Navbar />
-      <div className="grid grid-cols-12 grid-rows-12 items-center  justify-center w-screen ">
-        <div className=" lg:h-[80vh] bg-[url('/road.jpg')] grid-cols-12 bg-cover w-screen overflow-hidden  relative z-0 ">
+      <div className="grid grid-cols-12  items-center  justify-center  ">
+        <div className=" lg:h-[80vh] bg-[url('/road.jpg')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
           <div className="flex lg:mt-20 content-center justify-center">
             <HeroBaner />
           </div>
         </div>
       </div>
-      <div className="h-30  p-10"></div>
-      <div className="grid grid-cols-12 gap-12 text-black">
+      <div className="h-30  m-20"></div>
+      <div className="grid grid-cols-12 lg:gap-12  text-black">
         <CardProduct
           img={'/wordpress.jpg'}
           title={'Strona WordPress'}
