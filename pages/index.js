@@ -17,39 +17,36 @@ export default function Home() {
   ]
 
   const Cardhelper3 = [
-    'Najnowsze technologie programistyczne',
+    'Sześć miesięcy darmowego wsparcia',
     'Osobno przygotowany projekt UI',
-    'Aplikacja projektowana pod twój biznes.',
+    'Aplikacja pod twój biznes.',
   ]
   return (
     <>
       <Head />
       <Navbar />
       <div className="grid grid-cols-12  items-center  justify-center  ">
-        <div className=" lg:h-[80vh] bg-[url('/road.jpg')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
+        <div className=" lg:h-[80vh] bg-[url('/road.png')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
           <div className="flex lg:mt-20 content-center justify-center">
             <HeroBaner />
           </div>
         </div>
       </div>
       <div className="h-30  m-20"></div>
-      <div className="grid ml-10 grid-cols-12 lg:gap-12  text-black">
+      <div className="grid place-items-center justify-center grid-cols-12 text-black">
         <CardProduct
-          img={'/wordpress.jpg'}
           title={'Strona WordPress'}
           price={1499}
           text={Cardhelper}
         />
         <CardProduct
-          img={'/pay.jpg'}
           title={'Sklep Internetowy'}
           price={2999}
           text={Cardhelper2}
         />
         <CardProduct
-          img={'/code.jpg'}
           title={'Autorska aplikacja'}
-          price={6999}
+          price={19999}
           text={Cardhelper3}
         />
       </div>

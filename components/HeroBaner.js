@@ -2,7 +2,7 @@ import Cta from './Cta'
 
 export default function HeroBaner() {
   return (
-    <div className="lg:w-[50vw]  backdrop-blur-xl bg-black/30 container rounded-xl">
+    <div className="lg:w-[50vw] backdrop-blur-xl  bg-black/30 container rounded-xl">
       <h1 className="z-10 font-display font-bold tracking-wide p-10 text-accent-100  text-3xl">
         Rozwiń skrzydła dla swojego biznesu z naszymi innowacyjnymi
         rozwiązaniami
