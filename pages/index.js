@@ -27,13 +27,13 @@ export default function Home() {
       <Navbar />
       <div className="grid grid-cols-12  items-center  justify-center  ">
         <div className=" lg:h-[80vh] bg-[url('/road.png')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
-          <div className="flex lg:mt-20 content-center justify-center">
+          <div className="flex lg:mt-20 content-center align-middle justify-center">
             <HeroBaner />
           </div>
         </div>
       </div>
       <div className="h-30  m-20"></div>
-      <div className="grid place-items-center justify-center grid-cols-12 text-black">
+      <div className="grid  place-items-center grid-cols-12 text-black">
         <CardProduct
           title={'Strona WordPress'}
           price={1499}
@@ -43,6 +43,11 @@ export default function Home() {
           title={'Sklep Internetowy'}
           price={2999}
           text={Cardhelper2}
+        />
+        <CardProduct
+          title={'Autorska aplikacja'}
+          price={19999}
+          text={Cardhelper3}
         />
         <CardProduct
           title={'Autorska aplikacja'}
