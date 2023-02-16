@@ -11,7 +11,7 @@ export default function CardProduct({ title, text, price }) {// eslint-disable-l
         <h2 className="text-center text-xl lg:text-3xl font-display font-bold mb-2">
           {title}
         </h2>
-        <p className="mb-10 text-center font-display text-xl lg:text-3xl font-bold text-accent-800">
+        <p className="mb-10 text-center font-display text-xl lg:text-3xl font-bold text-accent-200">
           od {price} zł
         </p>
         <div className="lg:text-lg px-5">{listItems}</div>
