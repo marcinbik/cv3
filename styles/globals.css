@@ -3,11 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 html,
-
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#edf9ff;
+  background-color: #edf9ff;
   padding: 0;
   margin: 0;
 }

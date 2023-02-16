@@ -24,10 +24,10 @@ export default function Home() {
   return (
     <>
       <Head />
-      <Navbar />
       <div className="grid grid-cols-12  items-center  justify-center  ">
-        <div className=" lg:h-[80vh] bg-[url('/road.png')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
-          <div className="flex lg:mt-20 content-center align-middle justify-center">
+        <div className=" lg:h-fit bg-[url('/road.png')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
+            <Navbar />
+          <div className="flex items-center place-content-center place-items-center justify-center">
             <HeroBaner />
           </div>
         </div>

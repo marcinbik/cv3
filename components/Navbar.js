@@ -17,33 +17,33 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen }) {
   return (
     <div
-      className={`absolute z-10 top-0 left-0 h-screen w-screen  md:hidden  font-bold bg-gradient-to-r from-primary-900 to-accent-700  transform ${
+      className={`absolute z-10 top-0 left-0 h-screen w-screen  md:hidden backdrop-blur-md  bg-primary-900/10 pt-5 font-bold  transform ${
         open ? '-translate-x-0' : '-translate-x-full'
       } transition-tranform duration-200 else-in-out filter drop-shadow-md`}
     >
       <div
         className={
-          'flex items-center justify-center filter drop-shadow-md shadow-primary-100 h-30'
+          'flex items-center justify-center filter drop-shadow-md shadow-primary-100 '
         }
       >
-        <Link className={'text-2xl h-[15vh] font-bold lg:hidden'} href="/">
+        <Link className={'text-2xl  font-bold lg:hidden'} href="/">
           <Image src="/logo.png" width={150} height={150} alt="logo" />
         </Link>
       </div>
-      <div className={'flex flex-col text-2xl py-20 mx-20 uppercase lg:hidden'}>
+      <div className={'flex flex-col text-2xl p-16 mx-20 uppercase lg:hidden'}>
         <Link
-          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-900 rounded-md  my-4"
+          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-700 rounded-md  my-4"
           href="/services"
           onClick={() => {
             setTimeout(() => {
               setOpen(!open)
-            }, 100)
+            }, 200)
           }}
         >
           Moje usługi
         </Link>
         <Link
-          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-900 rounded-md  my-4"
+          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-700 rounded-md  my-4"
           href="/about"
           onClick={() => {
             setTimeout(() => {
@@ -54,7 +54,7 @@ function MobileNav({ open, setOpen }) {
           O Mnie
         </Link>
         <Link
-          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-900 rounded-md  my-4"
+          className=" p-2 text-center transition-colors hover:border-2 hover:bg-primary-700 rounded-md  my-4"
           href="/contact"
           onClick={() => {
             setTimeout(() => {
@@ -73,7 +73,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="flex filter   shadow-lg shadow-primary/5 text-primary-100   font-bold bg-gradient-to-r from-primary-900 to-accent-700   px-5 p-10 h-30  items-center">
+    <nav className="flex filter   text-primary-100   font-bold bg-transparent px-5 p-10 h-30  items-center">
       <MobileNav open={open} setOpen={setOpen} />
 
       <div
@@ -106,7 +106,7 @@ export default function Navbar() {
 
       <div className="hidden md:sticky filter  w-[100vw] h-fit md:flex items-center">
         <Link href="/" passHref className="mr-4">
-          <Image src="/logo.png" alt="logonav" width={100} height={100} />
+          <Image src="/logo.png" alt="logonav" width={180} height={180} />
         </Link>
         <NavLink to="/services">Moje Usługi</NavLink>
         <NavLink to="/about">O Mnie</NavLink>
