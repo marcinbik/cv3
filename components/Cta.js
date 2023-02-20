@@ -10,7 +10,7 @@ export default function Cta() {
           hover:-translate-y-1 hover:scale-150 hover:ring-offset-2 hover:ring-primary-300 transition-all ease-out duration-500
           animate-bounce hover:animate-none"
       >
-        Sprawdź Ofertę
+        Zamów Teraz
       </button>
     </Link>
   )

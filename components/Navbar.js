@@ -30,9 +30,9 @@ function MobileNav({ open, setOpen }) {
           <Image src="/logo.png" width={150} height={150} alt="logo" />
         </Link>
       </div>
-      <div className={'flex flex-col text-xl p-16 mx-auto uppercase lg:hidden'}>
+      <div className={'flex flex-col  text-xl p-16 mx-auto uppercase lg:hidden'}>
         <Link
-          className=" p-2 text-center transition-colors  hover:bg-primary-700 rounded-md  my-4"
+          className=" p-2 text-center transition-all hover:scale-150   rounded-md "
           href="/services"
           onClick={() => {
             setTimeout(() => {
@@ -43,7 +43,7 @@ function MobileNav({ open, setOpen }) {
           Moje usługi
         </Link>
         <Link
-          className=" p-2 text-center transition-colors  hover:bg-primary-700 rounded-md  my-4"
+          className=" p-2 text-center transition-all hover:scale-150   rounded-md  my-4"
           href="/about"
           onClick={() => {
             setTimeout(() => {
@@ -54,7 +54,7 @@ function MobileNav({ open, setOpen }) {
           O Mnie
         </Link>
         <Link
-          className=" p-2 text-center transition-colors  hover:bg-primary-700 rounded-md  my-4"
+          className=" p-2 text-center transition-all hover:scale-150   rounded-md  my-4"
           href="/contact"
           onClick={() => {
             setTimeout(() => {
