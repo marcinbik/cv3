@@ -26,7 +26,7 @@ function MobileNav({ open, setOpen }) {
           'flex items-center justify-center filter drop-shadow-md shadow-primary-100 '
         }
       >
-        <Link className={'text-xl  font-bold lg:hidden'} href="/">
+        <Link className={'text-xl   font-bold lg:hidden'} href="/">
           <Image src="/logo.png" width={150} height={150} alt="logo" />
         </Link>
       </div>
