@@ -53,8 +53,8 @@ const ContactForm = () => {
         />
 
         <button
-          className="p-5  bg-accent-300   w-60 h-14 xl:w-[20vw]  shadow-primary-200   m-5 drop-shadow-xl	
-          hover:bg-accent-500 text-gray-800 font-semibold py-2 px-4 
+          className="p-5  bg-accent-300   w-60 h-14 xl:w-[20vw]  shadow-primary-200   m-10 drop-shadow-xl
+          hover:bg-accent-500 text-gray-800 font-semibold py-2 px-4
           rounded-lg shadow"
           type="submit"
         >

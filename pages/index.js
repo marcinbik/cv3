@@ -2,7 +2,7 @@ import Head from 'components/Head'
 import Navbar from 'components/Navbar'
 import HeroBaner from 'components/HeroBaner'
 import CardProduct from 'components/CardProduct'
-import Contact from 'components/contact'
+import Contact from 'components/Contact'
 import Form from 'components/Form'
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="h-36  m-20"></div>
       <div className="col-span-12 text-center text-accent-800 text-6xl mb-20 ">
         <h3>Wybierz usługę dla siebie</h3>
-        </div>
+      </div>
       <div className="grid  place-items-center mx-auto container grid-cols-12 text-black">
         <CardProduct
           title={'Strona WordPress'}
@@ -60,8 +60,11 @@ export default function Home() {
           text={Cardhelper3}
         />
       </div>
-      <div className="">
-        <Form/>
+      <div className="pt-36">
+      <div className="col-span-12 text-center text-accent-800 text-6xl mb-10 ">
+        <h3>Napisz do mnie wiadmość</h3>
+      </div>
+        <Form />
       </div>
       <div className="mt-20">
         <Contact />
