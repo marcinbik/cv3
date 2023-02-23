@@ -5,11 +5,8 @@ import Link from 'next/link'
 
 export default function Contact() {
   return (
-    <div className="">
-      <div className="col-span-12 text-center text-accent-800 text-6xl m-10">
-        <h3>Kontakt</h3>
-      </div>
-      <div className=" md:grid grid-cols-12 p-10 bg-primary-200 sm:w-fit md:w-max rounded-xl justify-items-center items-center justify-center text-primary-900 container font-semibold  mx-auto text-xl 2xl:text-4xl   ">
+    <div className="bg-primary-200">
+      <div className=" md:grid grid-cols-12 p-10 bg-primary-200 sm:w-fit md:w-max rounded-xl justify-items-center items-center justify-center text-primary-900 container font-semibold  mx-auto text-lg lg:text-xl 2xl:text-4xl   ">
         <div className=" sm:col-span-12  place-items-center  aspect-video relative  md:col-span-4">
           <Image
             src="/blackLogo.png"

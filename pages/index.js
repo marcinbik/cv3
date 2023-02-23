@@ -2,8 +2,8 @@ import Head from 'components/Head'
 import Navbar from 'components/Navbar'
 import HeroBaner from 'components/HeroBaner'
 import CardProduct from 'components/CardProduct'
-import Image from 'next/image'
 import Contact from 'components/contact'
+import Form from 'components/Form'
 
 export default function Home() {
   const Cardhelper = [
@@ -27,14 +27,17 @@ export default function Home() {
     <>
       <Head />
       <div className="grid grid-cols-12  items-center gap-2  justify-center  ">
-        <div className=" lg:h-fit bg-[url('/road.png')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
+        <div className=" h-screen bg-[url('/road.png')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
           <Navbar />
           <div className="flex items-center  place-content-center place-items-center justify-center">
             <HeroBaner />
           </div>
         </div>
       </div>
-      <div className="h-30  m-20"></div>
+      <div className="h-36  m-20"></div>
+      <div className="col-span-12 text-center text-accent-800 text-6xl mb-20 ">
+        <h3>Wybierz usługę dla siebie</h3>
+        </div>
       <div className="grid  place-items-center mx-auto container grid-cols-12 text-black">
         <CardProduct
           title={'Strona WordPress'}
@@ -57,9 +60,12 @@ export default function Home() {
           text={Cardhelper3}
         />
       </div>
-      
-      
-      <Contact/>
+      <div className="">
+        <Form/>
+      </div>
+      <div className="mt-20">
+        <Contact />
+      </div>
     </>
   )
 }
