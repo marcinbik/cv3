@@ -30,13 +30,13 @@ export default function Home() {
         <div className=" h-screen bg-[url('/road.png')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
           <Navbar />
           <div className="flex items-center  place-content-center place-items-center justify-center">
-            <HeroBaner />
+            <HeroBaner href="#choice" />
           </div>
         </div>
       </div>
       <div className="h-36  m-20"></div>
       <div className="col-span-12 text-center text-accent-800 text-6xl mb-20 ">
-        <h3>Wybierz usługę dla siebie</h3>
+        <h3 id="choice" >Wybierz usługę dla siebie</h3>
       </div>
       <div className="grid  place-items-center mx-auto container grid-cols-12 text-black">
         <CardProduct

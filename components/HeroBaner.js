@@ -1,6 +1,6 @@
 import Cta from './Cta'
 
-export default function HeroBaner() {
+export default function HeroBaner(href) {
   return (
     <div className=" flex-initial lg:w-[50vw] backdrop-blur-xl bg-black/30 container lg:place-items-end relative rounded-xl">
       <h1 className="z-10 font-display font-bold tracking-wide p-10 text-accent-100  text-3xl">
@@ -15,7 +15,7 @@ export default function HeroBaner() {
         narzędziem, które pomaga budować wizerunek i zaufanie do Twojej marki.
       </p>
       <div className="flex p-10 mb-10 justify-center content-center">
-        <Cta />
+        <Cta href={href.href} />
       </div>
     </div>
   )

@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-export default function Cta() {
+export default function Cta(href = '#') {
   return (
-    <Link href="/services" passHref>
+    <Link href={href.href} passHref>
       <button
         className="bg-primary-300  shadow-primary/20 drop-shadow-xl
           hover:bg-primary-700 text-primary-900 hover:text-primary-50 font-semibold py-3 px-6
