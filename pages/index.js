@@ -61,10 +61,7 @@ export default function Home() {
         />
       </div>
       <div className="pt-36">
-      <div className="col-span-12 text-center text-accent-800 text-6xl mb-10 ">
-        <h3>Napisz do mnie wiadmość</h3>
-      </div>
-        <Form />
+      
       </div>
       <div className="mt-20">
         <Contact />
