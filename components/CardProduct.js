@@ -20,6 +20,7 @@ export default function CardProduct({ title, text, price, href = '#' }) {// esli
           <div className="lg:text-lg px-5">{listItems}</div>
           <p text={text} />
         </div>
+        <p className='m-4 text-primary-100'>czytaj więcej</p>
       </Link>
     </div>
   )
