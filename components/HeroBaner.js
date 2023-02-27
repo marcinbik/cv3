@@ -7,7 +7,7 @@ export default function HeroBaner(href) {
         Rozwiń skrzydła dla swojego biznesu z naszymi innowacyjnymi
         rozwiązaniami
       </h1>
-      <p className="text-accent-50 xl:text-xl pt-0 p-10">
+      <p className="text-primary-50 xl:text-xl pt-0 p-10">
         Jeśli jesteś właścicielem firmy lub prowadzisz działalność, to z
         pewnością wiesz, jak ważne jest posiadanie własnej strony internetowej.
         To właśnie tam Twoi potencjalni klienci będą szukać informacji o Tobie i
