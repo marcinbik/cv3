@@ -1,55 +1,98 @@
 import React, { useState } from 'react'
 
-const submitMail = async () => {
-  const response = await fetch('/api/server')
-}
+export default function Form() {
+  const [inputs, setInputs] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
 
-const ContactForm = () => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const [form, setForm] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    setInputs((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value,
+    }))
+  }
+
+  const onSubmitForm = async (e) => {
     e.preventDefault()
 
-    if (name === '' || email === '' || message === '') {
-      alert(`Proszę wypełnij wszystkie pola `)
-    } else {
-      alert(`Dziękuję ${name} za pozostawienie wiadomości`)
+    if (inputs.name && inputs.email && inputs.message) {
+      setForm({ state: 'loading' })
+      try {
+        const res = await fetch(`api/contact`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(inputs),
+        })
 
-      setName('')
-      setEmail('')
-      setMessage('')
+        const { error } = await res.json()
+
+        if (error) {
+          setForm({
+            state: 'error',
+            message: error,
+          })
+          return
+        }
+
+        setForm({
+          state: 'success',
+          message: 'Your message was sent successfully.',
+        })
+        setInputs({
+          name: '',
+          email: '',
+          message: '',
+        })
+      } catch (error) {
+        setForm({
+          state: 'error',
+          message: 'Something went wrong',
+        })
+      }
     }
   }
 
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={(e) => onSubmitForm(e)}
       className="grid grid-col-12 text-xl items-center  origin-center  p-10 "
     >
       <div className="grid col-span-8 justify-center mx-auto container">
         <label className="p-5 pl-0">Imie:</label>
         <input
+          id='name'
           className="p-3 pl-0 border-2"
           type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={inputs.name}
+          onChange={handleChange}
+          required
         />
 
         <label className="p-5 pl-0 ">Email:</label>
         <input
+          id="email"
           className="p-5 pl-0 border-2"
           type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={inputs.email}
+          onChange={handleChange}
+          required
         />
 
         <label className="p-5 pl-0">Wiadomość:</label>
         <textarea
+          id="message"
+          type='text'
           className="p-5 pl-0 border-2"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          value={inputs.message}
+          onChange={handleChange}
+          rows='5'
+          required
         />
 
         <button
@@ -65,4 +108,3 @@ const ContactForm = () => {
     </form>
   )
 }
-export default ContactForm
