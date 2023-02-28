@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <Head />
       <div className="grid grid-cols-12  items-center gap-2  justify-center  ">
-        <div className=" h-screen bg-[url('/road.png')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
+        <div className=" h-fit md:h-screen bg-[url('/road.png')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
           <Navbar />
           <div className=" sm:h-0 overflow-hidden  col-span-12 md:h-28  "></div>
           <div className="flex items-center  place-content-center place-items-center justify-center">
@@ -41,7 +41,7 @@ export default function Home() {
       </div>
 
       <div className="md:grid container grid-cols-12 mx-auto  items-center gap-8  justify-center   text-primary-50  mb-48  ">
-        <div className="  justify-center items-center sm:col-span-12 md:col-span-8 text-2xl rounded-xl opacity-80  bg-gradient-to-r my-5 from-primary-700 to-primary-400 p-3 md:p-20 ">
+        <div className="  justify-center items-center sm:col-span-12 md:col-span-8 text-lg md:text-xl rounded-xl opacity-80  bg-gradient-to-r my-5 from-primary-700 to-primary-400 p-3 md:p-20 ">
           <p>
             Strony internetowe i sklepy internetowe są niezbędnymi narzędziami
             dla każdej firmy, która chce dotrzeć do swoich klientów w
