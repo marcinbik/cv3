@@ -22,7 +22,7 @@ export default function Form() {
     if (inputs.name && inputs.email && inputs.message) {
       setForm({ state: 'loading' })
       try {
-        const res = await fetch(`api/contact`, {
+        const res = await fetch('api/contact', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -104,7 +104,13 @@ export default function Form() {
           Wyślij Wiadomość
         </button>
       </div>
-      <div></div>
+      {form.state === 'loading' ? (
+					<div>Sending....</div>
+				) : form.state === 'error' ? (
+					<div>{form.message}</div>
+				) : (
+					form.state === 'success' && <div>wysłano</div>
+				)}
     </form>
   )
 }
