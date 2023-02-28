@@ -4,6 +4,7 @@ import HeroBaner from 'components/HeroBaner'
 import CardProduct from 'components/CardProduct'
 import Contact from 'components/Contact'
 import Image from 'next/image'
+import Lead from 'components/Lead'
 
 export default function Home() {
   const Cardhelper = [
@@ -35,11 +36,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="col-span-12  text-center text-accent-800  text-6xl mt-48 my-20 ">
-        <h3 id="">Dlaczego warto być w internecie </h3>
+      <div className="mt-40">
+        <Lead id={''} text={'Dlaczego warto być w internecie ?'} />
       </div>
+
       <div className="md:grid container grid-cols-12 mx-auto  items-center gap-8  justify-center   text-primary-50  mb-48  ">
-        <div className="  justify-center items-center sm:col-span-12 md:col-span-8 text-2xl rounded-xl opacity-80  bg-gradient-to-r my-5 from-primary-700 to-primary-400 p-20 ">
+        <div className="  justify-center items-center sm:col-span-12 md:col-span-8 text-2xl rounded-xl opacity-80  bg-gradient-to-r my-5 from-primary-700 to-primary-400 p-3 md:p-20 ">
           <p>
             Strony internetowe i sklepy internetowe są niezbędnymi narzędziami
             dla każdej firmy, która chce dotrzeć do swoich klientów w
@@ -80,9 +82,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="col-span-12 text-center text-accent-800 text-6xl mb-20 ">
-        <h3 id="choice">Wybierz usługę dla siebie</h3>
-      </div>
+      <Lead id={'choice'} text={'Wybierz usługę dla siebie'} />
       <div className="grid  place-items-center mx-auto container grid-cols-12 text-black">
         <CardProduct
           title={'Strona WordPress'}
