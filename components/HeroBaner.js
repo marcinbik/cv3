@@ -4,8 +4,7 @@ export default function HeroBaner(href) {
   return (
     <div className=" flex-initial lg:w-[50vw] backdrop-blur-xl bg-black/30 container lg:place-items-end relative rounded-xl">
       <h1 className="z-10 font-display font-bold tracking-wide p-10 text-accent-100  text-3xl">
-        Rozwiń skrzydła dla swojego biznesu z naszymi innowacyjnymi
-        rozwiązaniami
+        Strona Internetowa dla twojej Firmy
       </h1>
       <p className="text-primary-50 xl:text-xl pt-0 p-10">
         Jeśli jesteś właścicielem firmy lub prowadzisz działalność, to z
