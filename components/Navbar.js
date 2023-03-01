@@ -33,25 +33,25 @@ function MobileNav({ open, setOpen }) {
       <div className={'flex flex-col  text-xl p-16 mx-auto uppercase lg:hidden'}>
         <Link
           className=" p-2 text-center transition-all hover:scale-150   rounded-md "
-          href="/services"
+          href="/"
           onClick={() => {
             setTimeout(() => {
               setOpen(!open)
             }, 200)
           }}
         >
-          Moje usługi
+          Start
         </Link>
         <Link
           className=" p-2 text-center transition-all hover:scale-150   rounded-md  my-4"
-          href="/about"
+          href="/services"
           onClick={() => {
             setTimeout(() => {
               setOpen(!open)
             }, 100)
           }}
         >
-          O Mnie
+          usługi
         </Link>
         <Link
           className=" p-2 text-center transition-all hover:scale-150   rounded-md  my-4"
@@ -108,8 +108,8 @@ export default function Navbar() {
         <Link href="/" passHref className="mr-4">
           <Image src="/logo.png" alt="logonav" width={180} height={180} />
         </Link>
-        <NavLink to="/services">Moje Usługi</NavLink>
-        <NavLink to="/about">O Mnie</NavLink>
+        <NavLink to="/">Start</NavLink>
+        <NavLink to="/services">usługi</NavLink>
         <NavLink to="/contact">Kontakt</NavLink>
       </div>
     </nav>
