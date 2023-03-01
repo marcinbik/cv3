@@ -94,6 +94,7 @@ export default function Home() {
           title={'Sklep Internetowy'}
           price={2999}
           text={Cardhelper2}
+          href={'services/#shop'}
         />
         <CardProduct
           title={'Autorska aplikacja'}
@@ -104,6 +105,7 @@ export default function Home() {
           title={'Autorska aplikacja'}
           price={19999}
           text={Cardhelper3}
+          href={'services/#code'}
         />
       </div>
       <div className="pt-36"></div>

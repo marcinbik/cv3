@@ -66,7 +66,7 @@ export default function Form() {
       <div className="grid col-span-8 justify-center mx-auto container">
         <label className="p-5 pl-0">Imie:</label>
         <input
-          id='name'
+          id="name"
           className="p-3 pl-0 border-2"
           type="text"
           value={inputs.name}
@@ -87,11 +87,11 @@ export default function Form() {
         <label className="p-5 pl-0">Wiadomość:</label>
         <textarea
           id="message"
-          type='text'
+          type="text"
           className="p-5 pl-0 border-2"
           value={inputs.message}
           onChange={handleChange}
-          rows='5'
+          rows="5"
           required
         />
 
@@ -104,13 +104,13 @@ export default function Form() {
           Wyślij Wiadomość
         </button>
       </div>
-      {form.state === 'loading' ? (
-					<div>Sending....</div>
-				) : form.state === 'error' ? (
-					<div>{form.message}</div>
-				) : (
-					form.state === 'success' && <div>wysłano</div>
-				)}
+      {form.state === 'Sowa Leci' ? (
+        <div>Sending....</div>
+      ) : form.state === 'error' ? (
+        <div>{form.message}</div>
+      ) : (
+        form.state === 'success' && <div>wysłano</div>
+      )}
     </form>
   )
 }
