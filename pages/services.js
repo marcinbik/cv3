@@ -13,7 +13,7 @@ export default function services() {
       </div>
       <div className="mt-20"></div>
       <Lead text={'Opis Usług'} />
-      <div className="bg-[url('/wordpress.jpg')] m-20 bg-cover h-fit rounded-xl">
+      <div className="bg-[url('/wordpress.jpg')] md:m-20 bg-cover h-fit rounded-xl">
       <ProductDescription
         title={'Strona Wordpress dla twojej Firmy'}
         lead={'Strona Wordpress dla twojej Firmy'}
