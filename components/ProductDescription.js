@@ -1,4 +1,4 @@
-export default function ProductDescription({ title, lead, list, text }) { // eslint-disable-line
+export default function ProductDescription({ title, lead, list, text, id='#' }) { // eslint-disable-line
   const listItems = list.map((element) => (
     <div key={title + element} className="p-4">
       <li>{element}</li>
@@ -7,7 +7,7 @@ export default function ProductDescription({ title, lead, list, text }) { // esl
   ))
   return (
     <div
-      id="wordpress"
+      id={id}
       className=" h-fit  container mx-auto  md:p-10  rounded-lg my-40 bg-cover col-span-12 overflow-hidden  relative z-0 "
     >
       <div className=" flex-initial  lg:w-[80vw] backdrop-blur-xl   bg-black/80   relative rounded-xl">

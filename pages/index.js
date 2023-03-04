@@ -5,8 +5,31 @@ import CardProduct from 'components/CardProduct'
 import Contact from 'components/Contact'
 import Image from 'next/image'
 import Lead from 'components/Lead'
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+    const callback = function (entries) {
+      entries.forEach((entry) => {
+        console.log(entry)
+
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fadeIn')
+        } else {
+          entry.target.classList.remove('animate-fadeIn')
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(callback)
+
+    const targets = document.querySelectorAll('.js-show-on-scroll')
+    targets.forEach(function (target) {
+      target.classList.add('opacity-0')
+      observer.observe(target)
+    })
+  })
+
   const Cardhelper = [
     'Sześć miesięcy darmowego wsparcia',
     'Szybka realizacja',
@@ -28,10 +51,10 @@ export default function Home() {
     <>
       <Head />
       <div className="grid grid-cols-12  items-center gap-2  justify-center  ">
-        <div className=" h-fit md:h-screen bg-[url('/road.jpg')]  bg-cover col-span-12 overflow-hidden  relative z-0 ">
+        <div className=" h-fit md:h-screen bg-[url('/road.jpg')]   bg-cover col-span-12 overflow-hidden  relative z-0 ">
           <Navbar />
           <div className=" sm:h-0 overflow-hidden  col-span-12 md:h-28  "></div>
-          <div className="flex items-center  place-content-center place-items-center justify-center">
+          <div className="flex items-center js-show-on-scroll place-content-center place-items-center justify-center">
             <HeroBaner href="#choice" />
           </div>
         </div>
@@ -40,8 +63,8 @@ export default function Home() {
         <Lead id={''} text={'Dlaczego warto być w internecie ?'} />
       </div>
 
-      <div className="md:grid container grid-cols-12 mx-auto  items-center gap-8  justify-center   text-primary-50  mb-48  ">
-        <div className="  justify-center items-center sm:col-span-12 md:col-span-8 text-lg md:text-xl rounded-xl   bg-gradient-to-r my-5 from-primary-900 to-primary-400 p-3 md:p-20 ">
+      <div className="md:grid container  js-show-on-scroll transition-all grid-cols-12 mx-auto  items-center gap-8  justify-center z-10   text-primary-50  mb-48  ">
+        <div className="   justify-center items-center transition-all sm:col-span-12 md:col-span-8 text-lg md:text-xl first-letter:text-4xl  first-letter:mr-1 rounded-xl   bg-gradient-to-r my-5 from-primary-900 to-primary-400 p-3 md:p-20 ">
           <p>
             Strony internetowe i sklepy internetowe są niezbędnymi narzędziami
             dla każdej firmy, która chce dotrzeć do swoich klientów w
@@ -73,7 +96,8 @@ export default function Home() {
             </b>
           </p>
         </div>
-        <div className="  col-span-4 mt-40 flex flex-col   items-center   z-50    justify-center   aspect-square   relative">
+
+        <div className=" js-show-on-scroll col-span-4 mt-40 flex flex-col items-center z-0 justify-center   aspect-square   relative">
           <Image
             className=" z-0  bg-accent-200 rounded-full w-24 h-24 "
             src="/person.png"
@@ -83,7 +107,7 @@ export default function Home() {
         </div>
       </div>
       <Lead id={'choice'} text={'Wybierz usługę dla siebie'} />
-      <div className="grid  place-items-center mx-auto container grid-cols-12 text-black">
+      <div className="grid  place-items-center mx-auto container grid-cols-12 text-black js-show-on-scroll">
         <CardProduct
           title={'Strona WordPress'}
           price={1499}
