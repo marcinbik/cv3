@@ -15,13 +15,13 @@ export default function Contact() {
             height={300}
           />
         </div>
-        <div className="sm:col-span-12  md:col-span-4 hover:text-accent-900 transition-all   ">
+        <div className="sm:col-span-12  md:col-span-4 hover:text-accent-500 transition-all   ">
             <FontAwesomeIcon icon={faPhone} />
           <Link href="tel:887407337" className="px-2">
             887407337
           </Link>
         </div>
-        <div className="sm:col-span-12 md:col-span-4 hover:text-accent-900 transition-all   ">
+        <div className="sm:col-span-12 md:col-span-4 hover:text-accent-500 transition-all   ">
           <FontAwesomeIcon icon={faEnvelope} />
           <Link href="mailto:marcinbikiewicz@gmail.com" className="px-2">
             marcinbikiewicz@gmail

@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     const callback = function (entries) {
       entries.forEach((entry) => {
-        console.log(entry)
+        console.log(entry.target.classList)
 
         if (entry.isIntersecting) {
           entry.target.classList.add('animate-fadeIn')
@@ -64,7 +64,7 @@ export default function Home() {
       </div>
 
       <div className="md:grid container  js-show-on-scroll transition-all grid-cols-12 mx-auto  items-center gap-8  justify-center z-10   text-primary-50  mb-48  ">
-        <div className="   justify-center items-center transition-all sm:col-span-12 md:col-span-8 text-lg md:text-xl first-letter:text-4xl  first-letter:mr-1 rounded-xl   bg-gradient-to-r my-5 from-primary-900 to-primary-400 p-3 md:p-20 ">
+        <div className="   justify-center items-center transition-all sm:col-span-12 md:col-span-8 text-lg md:text-xl first-letter:text-4xl  first-letter:mr-1 rounded-xl   bg-gradient-to-r my-5 from-primary-900 to-primary-600 p-3 md:p-20 ">
           <p>
             Strony internetowe i sklepy internetowe są niezbędnymi narzędziami
             dla każdej firmy, która chce dotrzeć do swoich klientów w

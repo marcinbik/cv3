@@ -2,6 +2,7 @@ import Form from 'components/Form'
 import Navbar from 'components/Navbar'
 import Contact from 'components/Contact'
 import Head from 'components/Head'
+import Lead from 'components/Lead'
 
 export default function services() {
   return (
@@ -11,9 +12,7 @@ export default function services() {
       <Navbar/>
 
       </div>
-      <div className="col-span-12 text-center text-accent-800 text-6xl mb-10 ">
-        <h3>Napisz do mnie wiadmość</h3>
-      </div>
+      <Lead text="Napisz do mnie wiadmość"/>
       <Form />
       <div className="mb-20"></div>
       <Contact />
