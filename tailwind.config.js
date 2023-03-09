@@ -36,12 +36,13 @@ module.exports = {
       },
 
       animation: {
-        fadeIn: 'fadeIn 1s ease-in forwards',
+        fadeIn: 'fadeIn  1s ease-in forwards',
       },
+
       keyframes: {
         fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
+          '0%': { opacity: 0, transform: 'translateX(-100%)', filter: 'blur(5px)' },
+          '100%': { opacity: 1, transform: 'translateX(0)', filter: 'blur(0)' },
         },
       },
       variants: {

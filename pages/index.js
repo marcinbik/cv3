@@ -24,7 +24,7 @@ export default function Home() {
     const observer = new IntersectionObserver(callback)
 
     const targets = document.querySelectorAll('.js-show-on-scroll')
-    targets.forEach(function (target) {
+    targets.forEach((target) => {
       target.classList.add('opacity-0')
       observer.observe(target)
     })
@@ -64,36 +64,37 @@ export default function Home() {
       </div>
 
       <div className="md:grid container  js-show-on-scroll transition-all grid-cols-12 mx-auto  items-center gap-8  justify-center z-10   text-primary-50  mb-48  ">
-        <div className="   justify-center items-center transition-all sm:col-span-12 md:col-span-8 text-lg md:text-xl first-letter:text-4xl  first-letter:mr-1 rounded-xl   bg-gradient-to-r my-5 from-primary-900 to-primary-600 p-3 md:p-20 ">
+        <div className="   justify-center items-center transition-all sm:col-span-12 md:col-span-8 text-lg md:text-xl first-letter:text-4xl md:m-10 first-letter:mr-1 rounded-xl   bg-gradient-to-r my-5 from-primary-900 to-primary-600 p-3 md:p-20 ">
           <p>
             Strony internetowe i sklepy internetowe są niezbędnymi narzędziami
             dla każdej firmy, która chce dotrzeć do swoich klientów w
             dzisiejszych czasach.
-            <br /> Dzięki nim możesz zaprezentować swoje produkty lub usługi w
+          </p>
+          <p>
+            Dzięki nim możesz zaprezentować swoje produkty lub usługi w
             atrakcyjny sposób, dotrzeć do szerszej grupy odbiorców, a także
             zwiększyć swoją sprzedaż.
-            <br /> Posiadanie własnej strony internetowej to nie tylko sposób na
-            zwiększenie widoczności Twojej firmy w sieci, ale również idealna
-            okazja do nawiązania bezpośredniego kontaktu z klientami.
-            <br />
-            <br /> Dzięki stronie internetowej możesz przedstawić swoją ofertę,
+          </p>
+          Posiadanie własnej strony internetowej to nie tylko sposób na
+          zwiększenie widoczności Twojej firmy w sieci, ale również idealna
+          okazja do nawiązania bezpośredniego kontaktu z klientami.
+          <p>
+            Dzięki stronie internetowej możesz przedstawić swoją ofertę,
             udzielać informacji o swoich produktach, a także prowadzić bloga i
-            publikować interesujące treści.
-            <br /> Natomiast sklep internetowy to idealne rozwiązanie dla firm,
-            które chcą sprzedawać swoje produkty przez Internet.
-            <br /> Dzięki niemu klienci mogą łatwo i wygodnie złożyć zamówienie
-            na Twoje produkty, a Ty możesz w prosty sposób zarządzać swoimi
-            zapasami i realizować zamówienia.
-            <br />
-            <br /> Nie czekaj więc dłużej i zacznij działać już teraz! Zaufaj
+            publikować interesujące treści. Natomiast sklep internetowy to
+            idealne rozwiązanie dla firm, które chcą sprzedawać swoje produkty
+            przez Internet. Dzięki niemu klienci mogą łatwo i wygodnie złożyć
+            zamówienie na Twoje produkty, a Ty możesz w prosty sposób zarządzać
+            swoimi zapasami i realizować zamówienia.
+          </p>
+          <p>
+            Nie czekaj więc dłużej i zacznij działać już teraz! Zaufaj
             profesjonalistom i załóż swoją własną stronę internetową lub sklep
             internetowy.
-            <br />
-            <br />
-            <b>
-              Z naszą pomocą Twoja firma będzie mogła odnosić jeszcze większe
-              sukcesy!
-            </b>
+          </p>
+          <p>
+            Z naszą pomocą Twoja firma będzie mogła odnosić jeszcze większe
+            sukcesy!
           </p>
         </div>
 
