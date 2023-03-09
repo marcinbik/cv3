@@ -51,8 +51,9 @@ export default function Home() {
     <>
       <Head />
       <div className="grid grid-cols-12  items-center gap-2  justify-center  ">
-        <div className=" h-fit md:h-screen bg-[url('/road.jpg')]   bg-cover col-span-12 overflow-hidden  relative z-0 ">
+        <div className=" h-fit md:h-screen bg-[url('/road.jpg')]   bg-cover col-span-12 overflow-hidden  relative z-0 "> 
           <Navbar />
+
           <div className=" sm:h-0 overflow-hidden  col-span-12 md:h-28  "></div>
           <div className="flex items-center js-show-on-scroll place-content-center place-items-center justify-center">
             <HeroBaner href="#choice" />
