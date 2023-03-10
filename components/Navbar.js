@@ -7,7 +7,7 @@ function NavLink({ to, children }) {
     <Link
       href={to}
       passHref
-      className="font-bold uppercase tracking-wide  text-primary-100 py-2 px-4 hover:text-primary-900 hover:bg-primary-100 rounded-lg transition-colors"
+      className="font-bold uppercase tracking-wide text-primary-100 py-2 px-4 hover:text-primary-900 hover:bg-primary-100 rounded-lg transition-colors"
     >
       {children}
     </Link>
@@ -17,20 +17,20 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen }) {
   return (
     <div
-      className={`sticky z-10 top-0 left-0 h-screen w-screen  mx-auto md:hidden backdrop-blur-md  bg-primary-900/10 pt-5 font-bold  transform ${
+      className={`absolute z-10 top-0 left-0 h-screen w-screen  mx-auto md:hidden backdrop-blur-md  bg-primary-900/10 pt-5 font-bold  transform ${
         open ? '-translate-x-0' : '-translate-x-full'
       } transition-tranform duration-200 else-in-out filter drop-shadow-md`}
     >
       <div
         className={
-          'sticky items-center justify-center filter drop-shadow-md shadow-primary-100 '
+          'flex items-center justify-center filter drop-shadow-md shadow-primary-100 '
         }
       >
         <Link className={'text-xl   font-bold lg:hidden'} href="/">
           <Image src="/logo.png" width={150} height={150} alt="logo" />
         </Link>
       </div>
-      <div className={'sticky flex-col  text-xl p-16 mx-auto uppercase lg:hidden'}>
+      <div className={'flex flex-col  text-xl p-16 mx-auto uppercase lg:hidden'}>
         <Link
           className=" p-2 text-center transition-all hover:scale-150   rounded-md "
           href="/"
@@ -73,7 +73,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="sticky filter  text-primary-100  font-bold bg-transparent  p-8 h-30 ">
+    <nav className="flex filter  text-primary-100  font-bold bg-transparent  p-8 h-30 ">
       <MobileNav open={open} setOpen={setOpen} />
 
       <div
