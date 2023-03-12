@@ -1,4 +1,3 @@
-
 export default function ProductDescription({
 
   title,
@@ -14,26 +13,25 @@ export default function ProductDescription({
     </div>
   ))
   return (
-    <>
+    <div className=" relative">
       <div
         id={id}
-        className="  "
+        className=""
       >
-        <div className=" flex  backdrop-blur-xl w-screen bg-black/80  relative rounded-xl">
+        <div className="md:flex bg-primary-800   rounded-xl">
           <h1 className="z-10 font-display font-bold tracking-wide p-10  text-accent-100  text-3xl">
             {title}
           </h1>
-          <div className="text-primary-50 xl:text-lg pt-0 p-10 ">
+          <div className="text-primary-100 xl:text-xl pt-0 p-5   ">
             <br />
             <h3 className="font-bold">{lead}</h3>
             <br />
-            <ul className="list-disc">{listItems}</ul>
+            <ul className="list-disc ">{listItems}</ul>
             <br />
-            <br />
-            <p>{text}</p>
+            <p className="" >{text}</p>
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }

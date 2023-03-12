@@ -30,7 +30,9 @@ function MobileNav({ open, setOpen }) {
           <Image src="/logo.png" width={150} height={150} alt="logo" />
         </Link>
       </div>
-      <div className={'flex flex-col  text-xl p-16 mx-auto uppercase lg:hidden'}>
+      <div
+        className={'flex flex-col  text-xl p-16 mx-auto uppercase lg:hidden'}
+      >
         <Link
           className=" p-2 text-center transition-all hover:scale-150   rounded-md "
           href="/"
@@ -104,7 +106,7 @@ export default function Navbar() {
         />
       </div>
 
-      <div className="hidden md:sticky filter   w-[100vw] h-fit md:flex items-center">
+      <div className="hidden md:sticky filter   w-scenn h-fit md:flex items-center">
         <Link href="/" passHref className="mr-4">
           <Image src="/logo.png" alt="logonav" width={180} height={180} />
         </Link>
