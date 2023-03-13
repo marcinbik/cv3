@@ -41,8 +41,16 @@ module.exports = {
 
       keyframes: {
         fadeIn: {
-          '0%': { opacity: 0, transform: 'translateX(-100%)', filter: 'blur(5px)' },
-          '100%': { opacity: 1, transform: 'translateX(0)', filter: 'blur(0)' },
+          '0%': {
+            opacity: 0,
+            // transform: 'translateX(-100%)',
+            filter: 'blur(5px)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translateX(0) ',
+            filter: 'blur(0)',
+          },
         },
       },
       variants: {

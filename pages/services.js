@@ -17,7 +17,7 @@ export default function services() {
           <ProductDescription
             img={'/wordpress.jpg'}
             title={'Strona Wordpress dla twojej Firmy'}
-            lead={'Strona Wordpress dla twojej Firmy'}
+            lead={'Prostota obsługi szybka realizacja'}
             list={[
               'Łatwość obsługi - dzięki prostemu interfejsowi i mnogości dostępnych narzędzi, WordPress jest łatwy do nauki i obsługi.',
               'Duża społeczność - WordPress ma ogromną społeczność użytkowników, którzy dzielą się swoimi doświadczeniami i rozwiązaniami.',
