@@ -17,13 +17,13 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen }) {
   return (
     <div
-      className={`absolute z-10 top-0 left-0 h-screen w-screen  mx-auto md:hidden backdrop-blur-md  bg-primary-900/10 pt-5 font-bold  transform ${
+      className={`absolute z-10 top-0 left-0 h-screen w-screen  mx-auto md:hidden backdrop-blur-md  bg-primary-500/10 pt-5 font-bold  transform ${
         open ? '-translate-x-0' : '-translate-x-full'
       } transition-tranform duration-200 else-in-out filter drop-shadow-md`}
     >
       <div
         className={
-          'flex items-center justify-center filter drop-shadow-md shadow-primary-100 '
+          'flex items-center justify-center filter drop-shadow-md shadow-primary-500 '
         }
       >
         <Link className={'text-xl   font-bold lg:hidden'} href="/">

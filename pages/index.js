@@ -86,7 +86,8 @@ export default function Home() {
         </div>
       </div>
       <Lead id={'choice'} text={'Wybierz usługę dla siebie'} />
-      <div className="grid  place-items-center mx-auto container grid-cols-12  js-show-on-scroll">
+      <div className="grid  place-items-center mx-auto container grid-cols-12 gap-4 js-show-on-scroll">
+        <div className=" xl:space-x-2 xl:flex grid col-span-12">
         <CardProduct
           title={'Strona WordPress'}
           price={1499}
@@ -104,12 +105,15 @@ export default function Home() {
           price={19999}
           text={Cardhelper3}
         />
-        <CardProduct
+     <CardProduct
           title={'Autorska aplikacja'}
           price={19999}
           text={Cardhelper3}
-          href={'services/#code'}
         />
+
+        </div>
+        
+      
       </div>
       <div className="pt-36"></div>
       <div className="mt-20">

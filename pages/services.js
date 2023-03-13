@@ -12,10 +12,10 @@ export default function services() {
         <Navbar />
       </div>
       <div className="mt-20 grid-cols-12 gap-4 container mx-auto">
-        <Lead text={'Opis Usług'} />
-        <div className="  sm:col-span-12 md:col-span-8 rounded-xl  bg-cover bg-[url('/wordpress.jpg')]" >
+        <Lead text={'Wordpress'} />
+
+        <div className=" sm:col-span-12 md:col-span-8 rounded-xl ]">
           <ProductDescription
-            title={'Strona Wordpress dla twojej Firmy'}
             lead={'Prostota obsługi szybka realizacja'}
             list={[
               'Łatwość obsługi - dzięki prostemu interfejsowi i mnogości dostępnych narzędzi, WordPress jest łatwy do nauki i obsługi.',
