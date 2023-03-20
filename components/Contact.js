@@ -7,12 +7,11 @@ export default function Contact() {
   return (
     <div className="bg-primary-900/90 mt-20">
       <div className=" md:grid grid-cols-12   sm:w-fit md:w-max  rounded-xl justify-items-center items-center justify-center text-primary-100 container font-semibold  text-lg lg:text-xl 2xl:text-4xl   ">
-        <div className=" sm:col-span-12  flex justify-center  aspect-video relative  md:col-span-4">
+        <div className=" sm:col-span-12 container mx-auto flex justify-center aspect-video relative  md:col-span-4">
           <Image
             src="/logo.png"
             alt="blackLogo"
-            width={300}
-            height={300}
+            fill
           />
         </div>
         <div className="sm:col-span-12  md:col-span-4 hover:text-accent-500 transition-all   ">

@@ -18,8 +18,8 @@ export default function ProductDescription({
         id={id}
         className=""
       >
-        <div className="md:flex bg-primary-800/80  backdrop-blur-sm  rounded-xl">
-          <h1 className="z-10 font-display font-bold tracking-wide p-5  text-accent-100  text-3xl">
+        <div className="grid md:flex bg-primary-800/80  backdrop-blur-sm  rounded-xl">
+          <h1 className="z-10 font-display font-bold tracking-wide md:p-5  text-accent-100  text-3xl">
             {title}
           </h1>
           <div className="text-primary-100 xl:text-xl m-10  ">
