@@ -39,7 +39,7 @@ export default function Home() {
   const Cardhelper2 = [
     'Sześć miesięcy darmowego wsparcia',
     'Pomoc oraz szkolenia z obługi sklepu',
-    'PrestaShop/Woocomerce ',
+    'Prostota obługi',
   ]
 
   const Cardhelper3 = [
@@ -95,15 +95,15 @@ export default function Home() {
           href={'services/#wordpress'}
         />
         <CardProduct
-          title={'Sklep Internetowy'}
+          title={'Sklep Internetowy z mała ilością produktów'}
           price={2999}
           text={Cardhelper2}
           href={'services/#shop'}
         />
         <CardProduct
-          title={'Autorska aplikacja'}
-          price={19999}
-          text={Cardhelper3}
+          title={'Sklep internetowy z dużą ilością produktów'}
+          price={4999}
+          text={Cardhelper2}
         />
      <CardProduct
           title={'Autorska aplikacja'}
@@ -112,8 +112,6 @@ export default function Home() {
         />
 
         </div>
-        
-      
       </div>
       <div className="pt-36"></div>
       <div className="mt-20">

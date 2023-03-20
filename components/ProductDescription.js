@@ -18,7 +18,7 @@ export default function ProductDescription({
         id={id}
         className=""
       >
-        <div className="md:flex bg-primary-800   rounded-xl">
+        <div className="md:flex bg-primary-800/80  backdrop-blur-sm  rounded-xl">
           <h1 className="z-10 font-display font-bold tracking-wide p-5  text-accent-100  text-3xl">
             {title}
           </h1>

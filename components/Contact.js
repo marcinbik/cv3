@@ -6,8 +6,8 @@ import Link from 'next/link'
 export default function Contact() {
   return (
     <div className="bg-primary-900/90 mt-20">
-      <div className=" md:grid grid-cols-12   sm:w-fit md:w-max mx-auto rounded-xl justify-items-center items-center justify-center text-primary-100 container font-semibold  text-lg lg:text-xl 2xl:text-4xl   ">
-        <div className=" sm:col-span-12  place-items-center  aspect-video relative  md:col-span-4">
+      <div className=" md:grid grid-cols-12   sm:w-fit md:w-max  rounded-xl justify-items-center items-center justify-center text-primary-100 container font-semibold  text-lg lg:text-xl 2xl:text-4xl   ">
+        <div className=" sm:col-span-12  flex justify-center  aspect-video relative  md:col-span-4">
           <Image
             src="/logo.png"
             alt="blackLogo"
@@ -21,7 +21,7 @@ export default function Contact() {
             887407337
           </Link>
         </div>
-        <div className="sm:col-span-12 md:col-span-4 hover:text-accent-500 transition-all   ">
+        <div className="sm:col-span-12 md:col-span-4  hover:text-accent-500 transition-all   ">
           <FontAwesomeIcon icon={faEnvelope} />
           <Link href="mailto:marcinbikiewicz@gmail.com" className="px-2">
             marcinbikiewicz@gmail
