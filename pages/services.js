@@ -33,9 +33,8 @@ export default function services() {
       <div className="bg-primary-900  ">
         <Navbar />
       </div>
-        <Lead text={'Wordpress'} />
+      <Lead text={'Wordpress'} />
       <div className="js-show-on-scroll  grid-cols-12 gap-4 bg-[url(/wordpress.jpg)] bg-cover md:p-10 rounded-xl container mx-auto mb-40">
-
         <div className=" sm:col-span-12 md:col-span-8 rounded-xl ]">
           <ProductDescription
             lead={'Prostota obsługi szybka realizacja'}
@@ -50,9 +49,8 @@ export default function services() {
           />
         </div>
       </div>
-        <Lead text={'Sklep Internetowy'} />
+      <Lead text={'Sklep Internetowy'} />
       <div className=" grid-cols-12 gap-4 bg-[url(/pay.jpg)] bg-cover md:p-10 rounded-xl container mx-auto mb-40">
-
         <div className=" sm:col-span-12 md:col-span-8 rounded-xl ]">
           <ProductDescription
             lead={'Prostota obsługi szybka realizacja'}
@@ -67,9 +65,8 @@ export default function services() {
           />
         </div>
       </div>
-        <Lead text={'Autorska aplikacja'} />
+      <Lead text={'Autorska aplikacja'} />
       <div className="js-show-on-scroll  grid-cols-12 gap-4 bg-[url(/code.jpg)] bg-cover md:p-10 rounded-xl container mx-auto mb-40">
-
         <div className=" sm:col-span-12 md:col-span-8 rounded-xl ]">
           <ProductDescription
             lead={'Prostota obsługi szybka realizacja'}
