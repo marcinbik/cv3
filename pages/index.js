@@ -78,7 +78,7 @@ export default function Home() {
 
         <div className=" js-show-on-scroll col-span-4 mt-40 flex flex-col items-center z-0 justify-center   aspect-square   relative">
           <Image
-            className=" z-0  bg-accent-200 rounded-full mx-auto  "
+            className=" z-0  bg-accent-200 md:max-h-[65vh] md:max-w-[50vw] aspect-square rounded-full mx-auto  "
             src="/person.png"
             fill
             alt="person"
